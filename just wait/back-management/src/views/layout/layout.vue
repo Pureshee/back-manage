@@ -1,8 +1,7 @@
 <template>
-  <div>
-    主页
+  <div class="layout">
     <sidebar />
-    <mainContent />
+    <mainContent class="main-content" />
   </div>
 </template>
 
@@ -18,4 +17,11 @@ export default {
   }
 };
 </script>
-<style></style>
+<style>
+.main-content {
+  padding-left: 200px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: green;
+}
+</style>
