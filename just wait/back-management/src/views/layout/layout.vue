@@ -17,11 +17,8 @@ export default {
   }
 };
 </script>
-<style>
+<style lang="scss" scoped>
 .main-content {
-  padding-left: 200px;
   box-sizing: border-box;
-  width: 100%;
-  background-color: green;
 }
 </style>

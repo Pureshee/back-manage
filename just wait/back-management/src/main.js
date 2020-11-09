@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
@@ -8,9 +9,9 @@ Vue.use(ElementUI);
 
 Vue.config.productionTip = false;
 
-router.beforeEach((to, from, next) => {
-  console.log(to);
-  next();
+router.afterEach((to, from) => {
+  // console.log(to.matched);
+  store.commit("setCrumb", to.matched);
 });
 
 new Vue({
